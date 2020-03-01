@@ -1,4 +1,4 @@
-module Elmercy.System exposing (Plugin, System, checkApp, generateCode)
+module Elmercy.System exposing (Plugin, SourceCode, System, checkApp, generateCode)
 
 
 type alias Plugin =
@@ -13,6 +13,11 @@ type alias System =
     , plugins : List Plugin
     }
 
+
+type alias Module =
+    { name : String
+    , generate : options ->5
+    }
 
 type alias App =
     ()
